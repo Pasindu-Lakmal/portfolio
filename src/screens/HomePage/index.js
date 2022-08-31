@@ -3,7 +3,7 @@ import "./index.css";
 const HomePage = () => {
   return (
     <div>
-      <h1>this is Home Page</h1>
+      <h1 class="title is-1">This is homepage</h1>
     </div>
   );
 };
