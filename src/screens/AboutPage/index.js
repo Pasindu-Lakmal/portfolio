@@ -3,7 +3,7 @@ import "./index.css";
 const AboutPage = () => {
   return (
     <div>
-      <h1>this is About Page</h1>
+      <h1 class="title is-1">this is about page</h1>
     </div>
   );
 };
