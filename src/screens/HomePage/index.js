@@ -1,9 +1,10 @@
 import React from "react";
+import HomeHero from "./components";
 import "./index.css";
 const HomePage = () => {
   return (
     <div>
-      <h1 class="title is-1">This is homepage</h1>
+      <HomeHero />
     </div>
   );
 };

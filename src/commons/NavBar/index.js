@@ -29,45 +29,33 @@ const NavBar = () => {
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a href="#!" class="navbar-item">
+          <a href="/" class="navbar-item">
             Home
           </a>
 
-          <a href="#!" class="navbar-item">
-            Documentation
+          <a href="/about" class="navbar-item">
+            About
           </a>
-
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a href="#!" class="navbar-link">
-              More
-            </a>
-
-            <div class="navbar-dropdown">
-              <a href="#!" class="navbar-item">
-                About
-              </a>
-              <a href="#!" class="navbar-item">
-                Jobs
-              </a>
-              <a href="#!" class="navbar-item">
-                Contact
-              </a>
-              <hr class="navbar-divider" />
-              <a href="#!" class="navbar-item">
-                Report an issue
-              </a>
-            </div>
-          </div>
         </div>
 
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <a href="#!" class="button is-primary">
-                <strong>Sign up</strong>
+              <a href="https://github.com/Pasindu-Lakmal">
+                <button class="button is-black mr-2">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>GitHub</span>
+                </button>
               </a>
-              <a href="#!" class="button is-light">
-                Log in
+              <a href="https://www.facebook.com/pasindu.lakmal.1238">
+                <button class="button is-link">
+                  <span class="icon">
+                    <i class="fa-brands fa-square-facebook"></i>
+                  </span>
+                  <span>Facebook</span>
+                </button>
               </a>
             </div>
           </div>
