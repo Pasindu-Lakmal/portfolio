@@ -1,0 +1,20 @@
+.work-cards {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+.card-image {
+  height: 60px;
+}
+
+.blue-card {
+  background-color: #f2f6ff !important;
+}
+
+.yello-card {
+  background-color: #fcfcf0 !important;
+}
+
+.green-card {
+  background-color: #f2fcf9 !important;
+}
