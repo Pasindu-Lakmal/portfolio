@@ -14,7 +14,7 @@ const Contact = () => {
     let sms = `New message from: ${username} \nmessage: ${message} \ncontact on: ${phone}`;
     console.log(sms);
     axios
-      .post("", { Body: sms })
+      .post("https://sms-bot-1546.twil.io/sendsms", { Body: sms })
       .then((response) => {
         console.log(response);
         if (response.data.status === "success") {
