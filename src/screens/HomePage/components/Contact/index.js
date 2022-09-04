@@ -1,6 +1,8 @@
 import React from "react";
 import "./index.css";
 import { useState } from "react";
+import axios from "axios";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const [username, setUsername] = useState("");
@@ -9,6 +11,20 @@ const Contact = () => {
 
   const sendSMS = () => {
     console.log(username, phone, message);
+    let sms = `New message from: ${username} \nmessage: ${message} \ncontact on: ${phone}`;
+    console.log(sms);
+    axios
+      .post("", { Body: sms })
+      .then((response) => {
+        console.log(response);
+        if (response.data.status === "success") {
+          Swal.fire("Good job!", "You sent the sms!", "success");
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+        Swal.fire("Error!", "Something Went Wrong!", "error");
+      });
   };
 
   return (
